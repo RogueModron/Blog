@@ -1,0 +1,42 @@
+----- Native Library -----
+
+- Test:
+    g++ Test.cpp Wrapper.cpp -o Test.exe -I W:\Libs\boost
+
+    g++ -c -O2 -o Wrapper.o Wrapper.cpp -IW:\Libs\boost
+    g++ -s -shared -o LibNative.dll Wrapper.o
+    
+    cl /O2 /EHsc -IW:\Libs\boost Wrapper.cpp /link /OUT:Test.exe
+    
+    cl /LD /O2 /EHsc -IW:\Libs\boost Wrapper.cpp /link /OUT:LibNative.dll
+
+----- Gcc-Xml -----
+
+- Donwload source, see:
+    http://www.gccxml.org/HTML/Download.html
+
+- Build:
+    - Tested with CMake 2.8.7:
+        - Launch cmake-gui.exe from a VS2010 Command Prompt
+        - Select NMake
+        - After Configure set Release
+        
+- Xml file:
+    - Set path for compiler
+    - Command:
+        gccxml --gccxml-compiler gcc -fxml=Wrapper.xml Wrapper.h
+        gccxml --gccxml-compiler msvc10 -fxml=Wrapper.xml Wrapper.h
+
+
+----- Cxxi -----
+
+- Donwload source, see:
+    http://github.com/mono/cxxi
+    http://github.com/kthompson/cxxi
+    
+- Build:
+    - Verify release assembly name, must be Mono.Cxxi
+    
+- Output files:
+    generator -abi=ItaniumAbi -ns=CxxiGeneratedNamespace -lib=Native -o=OutputFolder Wrapper.xml
+    

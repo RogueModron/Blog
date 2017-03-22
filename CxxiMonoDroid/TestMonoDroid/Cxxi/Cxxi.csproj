@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{659EBE6F-CAB6-4DD3-88DD-8ECA821E7AFB}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cxxi</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AssemblyName>Mono.Cxxi</AssemblyName>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a</AndroidSupportedAbis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\AssemblyInfo.cs">
+      <Link>src\Mono.Cxxi\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Attributes.cs">
+      <Link>src\Mono.Cxxi\Attributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\ByReference.cs">
+      <Link>src\Mono.Cxxi\ByReference.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\CppField.cs">
+      <Link>src\Mono.Cxxi\CppField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\CppInstancePtr.cs">
+      <Link>src\Mono.Cxxi\CppInstancePtr.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\CppLibrary.cs">
+      <Link>src\Mono.Cxxi\CppLibrary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\CppModifiers.cs">
+      <Link>src\Mono.Cxxi\CppModifiers.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\CppType.cs">
+      <Link>src\Mono.Cxxi\CppType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\CppTypeInfo.cs">
+      <Link>src\Mono.Cxxi\CppTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Interfaces.cs">
+      <Link>src\Mono.Cxxi\Interfaces.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\CppAbi.cs">
+      <Link>src\Mono.Cxxi\Abi\CppAbi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\EmitInfo.cs">
+      <Link>src\Mono.Cxxi\Abi\EmitInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\MethodType.cs">
+      <Link>src\Mono.Cxxi\Abi\MethodType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\SymbolResolver.cs">
+      <Link>src\Mono.Cxxi\Abi\SymbolResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\VTable.cs">
+      <Link>src\Mono.Cxxi\Abi\VTable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\Impl\ItaniumAbi.cs">
+      <Link>src\Mono.Cxxi\Abi\Impl\ItaniumAbi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\Impl\ItaniumTypeInfo.cs">
+      <Link>src\Mono.Cxxi\Abi\Impl\ItaniumTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\Impl\MsvcAbi.cs">
+      <Link>src\Mono.Cxxi\Abi\Impl\MsvcAbi.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Abi\Impl\MsvcTypeInfo.cs">
+      <Link>src\Mono.Cxxi\Abi\Impl\MsvcTypeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Util\DelegateTypeCache.cs">
+      <Link>src\Mono.Cxxi\Util\DelegateTypeCache.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Util\IEnumerableTransform.cs">
+      <Link>src\Mono.Cxxi\Util\IEnumerableTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Util\LazyGeneratedList.cs">
+      <Link>src\Mono.Cxxi\Util\LazyGeneratedList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Util\MethodSignature.cs">
+      <Link>src\Mono.Cxxi\Util\MethodSignature.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\kthompson-cxxi\src\Mono.Cxxi\Util\ReflectionHelper.cs">
+      <Link>src\Mono.Cxxi\Util\ReflectionHelper.cs</Link>
+    </Compile>
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,356 @@
+.
+|   Gcc-Xml.Tree.txt
+|   
++---bin
+|       gccxml_cc1plus.exe
+|       gccxml_vcconfig.exe
+|       gccxml.exe
+|       gccxml_vcconfig.bat
+|       
+\---share
+    +---doc
+    |       Copyright.txt
+    |       Copyright.txt.rule
+    |       gccxml.1
+    |       gccxml.1.rule
+    |       gccxml.html
+    |       gccxml.html.rule
+    |       gccxml.txt
+    |       gccxml.txt.rule
+    |       
+    \---gccxml-0.9
+        |   Copyright.txt
+        |   README
+        |   gccxml_identify_compiler.cc
+        |   
+        +---VcInstall
+        |       gccxml_vcupdate.bat.in
+        |       vc10Include.patch
+        |       vc10PlatformSDK.patch
+        |       vc6Include.patch
+        |       vc71Include.patch
+        |       vc71PlatformSDK.patch
+        |       vc7Include.patch
+        |       vc7PlatformSDK.patch
+        |       vc8ExpressInclude.patch
+        |       vc8ExpressPlatformSDK.patch
+        |       vc8Include.patch
+        |       vc8PlatformSDK.patch
+        |       vc8sp1ExpressInclude.patch
+        |       vc8sp1Include.patch
+        |       vc8sp1PlatformSDK.patch
+        |       vc9Include.patch
+        |       vc9PlatformSDK.patch
+        |       vc9sp1Include.patch
+        |       vcCat.exe
+        |       vcCat.readme.txt
+        |       vcInstall.cxx
+        |       vcPatch.exe
+        |       vcPatch.readme.txt
+        |       vc_helper
+        |       
+        +---Intel
+        |       find_flags
+        |       pthread.h
+        |       
+        +---GCC
+        |   |   COPYING.RUNTIME
+        |   |   COPYING3
+        |   |   
+        |   +---4.7
+        |   |   |   complex
+        |   |   |   emmintrin.h
+        |   |   |   gccxml_builtins.h
+        |   |   |   iomanip
+        |   |   |   mmintrin.h
+        |   |   |   xmmintrin.h
+        |   |   |   
+        |   |   +---ext
+        |   |   |       atomicity.h
+        |   |   |       
+        |   |   \---bits
+        |   |           stl_algo.h
+        |   |           stl_algobase.h
+        |   |           
+        |   +---4.6
+        |   |   |   complex
+        |   |   |   emmintrin.h
+        |   |   |   gccxml_builtins.h
+        |   |   |   iomanip
+        |   |   |   mmintrin.h
+        |   |   |   xmmintrin.h
+        |   |   |   
+        |   |   \---bits
+        |   |           stl_algo.h
+        |   |           stl_algobase.h
+        |   |           
+        |   +---4.5
+        |   |       emmintrin.h
+        |   |       gccxml_builtins.h
+        |   |       iomanip
+        |   |       mmintrin.h
+        |   |       xmmintrin.h
+        |   |       
+        |   +---4.4
+        |   |   |   emmintrin.h
+        |   |   |   gccxml_builtins.h
+        |   |   |   mmintrin.h
+        |   |   |   xmmintrin.h
+        |   |   |   
+        |   |   \---bits
+        |   |           c++config.h
+        |   |           
+        |   +---4.3
+        |   |       emmintrin.h
+        |   |       gccxml_builtins.h
+        |   |       mmintrin.h
+        |   |       xmmintrin.h
+        |   |       
+        |   +---4.2
+        |   |       emmintrin.h
+        |   |       gccxml_apple_emmintrin.h
+        |   |       gccxml_apple_mmintrin.h
+        |   |       gccxml_apple_xmmintrin.h
+        |   |       gccxml_builtins.h
+        |   |       gccxml_gnu_emmintrin.h
+        |   |       gccxml_gnu_mmintrin.h
+        |   |       gccxml_gnu_xmmintrin.h
+        |   |       mmintrin.h
+        |   |       xmmintrin.h
+        |   |       
+        |   +---4.1
+        |   |   |   emmintrin.h
+        |   |   |   gccxml_apple_emmintrin.h
+        |   |   |   gccxml_apple_mmintrin.h
+        |   |   |   gccxml_apple_xmmintrin.h
+        |   |   |   gccxml_builtins.h
+        |   |   |   gccxml_gnu_emmintrin.h
+        |   |   |   gccxml_gnu_mmintrin.h
+        |   |   |   gccxml_gnu_xmmintrin.h
+        |   |   |   mmintrin.h
+        |   |   |   xmmintrin.h
+        |   |   |   
+        |   |   \---bits
+        |   |           gthr-default.h
+        |   |           
+        |   +---4.0
+        |   |   |   emmintrin.h
+        |   |   |   gccxml_apple_emmintrin.h
+        |   |   |   gccxml_apple_mmintrin.h
+        |   |   |   gccxml_apple_xmmintrin.h
+        |   |   |   gccxml_builtins.h
+        |   |   |   gccxml_gnu_emmintrin.h
+        |   |   |   gccxml_gnu_mmintrin.h
+        |   |   |   gccxml_gnu_xmmintrin.h
+        |   |   |   mmintrin.h
+        |   |   |   xmmintrin.h
+        |   |   |   
+        |   |   \---bits
+        |   +---3.4
+        |   |   |   emmintrin.h
+        |   |   |   gccxml_builtins.h
+        |   |   |   mmintrin.h
+        |   |   |   xmmintrin.h
+        |   |   |   
+        |   |   \---bits
+        |   |           gthr-default.h
+        |   |           
+        |   +---3.3
+        |   |   |   fstream
+        |   |   |   gccxml_builtins.h
+        |   |   |   sstream
+        |   |   |   
+        |   |   \---bits
+        |   |           fstream.tcc
+        |   |           list.tcc
+        |   |           locale_facets.h
+        |   |           messages_members.h
+        |   |           sstream.tcc
+        |   |           stl_deque.h
+        |   |           stl_list.h
+        |   |           stl_tree.h
+        |   |           stl_vector.h
+        |   |           valarray_meta.h
+        |   |           
+        |   +---3.2
+        |   |   |   fstream
+        |   |   |   pthread.h
+        |   |   |   sstream
+        |   |   |   
+        |   |   \---bits
+        |   |           fstream.tcc
+        |   |           gthr-default.h
+        |   |           istream.tcc
+        |   |           locale_facets.h
+        |   |           locale_facets.tcc
+        |   |           messages_members.h
+        |   |           ostream.tcc
+        |   |           sstream.tcc
+        |   |           stl_deque.h
+        |   |           stl_list.h
+        |   |           stl_tree.h
+        |   |           stl_vector.h
+        |   |           valarray_meta.h
+        |   |           
+        |   +---3.1
+        |   |       pthread.h
+        |   |       
+        |   +---3.0
+        |   |       pthread.h
+        |   |       
+        |   +---2.96
+        |   |       sstream
+        |   |       
+        |   \---2.95
+        |       |   algorithm
+        |       |   bitset
+        |       |   cctype
+        |       |   clocale
+        |       |   cmath
+        |       |   complex
+        |       |   csetjmp
+        |       |   csignal
+        |       |   cstdarg
+        |       |   cstddef
+        |       |   cstdio
+        |       |   cstdlib
+        |       |   cstring
+        |       |   ctime
+        |       |   cwchar
+        |       |   cwctype
+        |       |   deque
+        |       |   exception
+        |       |   fstream
+        |       |   functional
+        |       |   gccxml_bitset
+        |       |   iomanip
+        |       |   iosfwd
+        |       |   iostream
+        |       |   iterator
+        |       |   list
+        |       |   map
+        |       |   memory
+        |       |   new
+        |       |   numeric
+        |       |   pthread.h
+        |       |   queue
+        |       |   set
+        |       |   sstream
+        |       |   stack
+        |       |   stdexcept
+        |       |   stl_alloc.h
+        |       |   stl_bvector.h
+        |       |   stl_deque.h
+        |       |   stl_list.h
+        |       |   stl_tree.h
+        |       |   stl_vector.h
+        |       |   string
+        |       |   strstream
+        |       |   typeinfo
+        |       |   utility
+        |       |   valarray
+        |       |   vector
+        |       |   
+        |       \---std
+        |               bastring.cc
+        |               complext.h
+        |               dcomplex.h
+        |               fcomplex.h
+        |               gslice_array.h
+        |               indirect_array.h
+        |               ldcomplex.h
+        |               mask_array.h
+        |               slice_array.h
+        |               std_valarray.h
+        |               straits.h
+        |               valarray_meta.h
+        |               
+        +---Vc9
+        |   \---Include
+        |       |   algorithm
+        |       |   crtdbg.h
+        |       |   crtdefs.h
+        |       |   deque
+        |       |   eh.h
+        |       |   iosfwd
+        |       |   iterator
+        |       |   limits
+        |       |   list
+        |       |   locale
+        |       |   memory
+        |       |   sal.h
+        |       |   setjmp.h
+        |       |   stddef.h
+        |       |   typeinfo
+        |       |   vector
+        |       |   xdebug
+        |       |   xhash
+        |       |   xlocale
+        |       |   xlocmes
+        |       |   xlocmon
+        |       |   xlocnum
+        |       |   xloctime
+        |       |   xstddef
+        |       |   xutility
+        |       |   yvals.h
+        |       |   
+        |       \---CodeAnalysis
+        |               sourceannotations.h
+        |               
+        \---Vc10
+            +---Include
+            |   |   algorithm
+            |   |   bitset
+            |   |   crtdefs.h
+            |   |   deque
+            |   |   eh.h
+            |   |   fstream
+            |   |   functional
+            |   |   hash_map
+            |   |   hash_set
+            |   |   ios
+            |   |   istream
+            |   |   iterator
+            |   |   limits
+            |   |   list
+            |   |   map
+            |   |   memory
+            |   |   ostream
+            |   |   queue
+            |   |   sal.h
+            |   |   set
+            |   |   setjmp.h
+            |   |   sstream
+            |   |   stack
+            |   |   stddef.h
+            |   |   string
+            |   |   strstream
+            |   |   type_traits
+            |   |   typeinfo
+            |   |   utility
+            |   |   valarray
+            |   |   vector
+            |   |   xdebug
+            |   |   xhash
+            |   |   xlocale
+            |   |   xlocnum
+            |   |   xmemory
+            |   |   xstddef
+            |   |   xstring
+            |   |   xtr1common
+            |   |   xtree
+            |   |   xutility
+            |   |   xxresult
+            |   |   yvals.h
+            |   |   
+            |   \---CodeAnalysis
+            |           sourceannotations.h
+            |           
+            \---PlatformSDK
+                    OAIdl.h
+                    ObjBase.h
+                    PropIdl.h
+                    WinNT.h
+                    driverspecs.h
+                    ktmtypes.h
+                    

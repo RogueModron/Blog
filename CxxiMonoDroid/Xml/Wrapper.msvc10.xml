@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<GCC_XML cvs_revision="1.135">
+  <Namespace id="_1" name="::" members="_3 _2 _4 " mangled="_Z2::" demangled="::"/>
+  <Namespace id="_2" name="std" context="_1" members="" mangled="_Z3std" demangled="std"/>
+  <Namespace id="_3" name="__cxxabiv1" context="_1" members="" mangled="_Z10__cxxabiv1" demangled="__cxxabiv1"/>
+  <Namespace id="_4" name="ClippingLibrary" context="_1" members="_5 " mangled="_Z15ClippingLibrary" demangled="ClippingLibrary"/>
+  <Class id="_5" name="Wrapper" context="_4" mangled="N15ClippingLibrary7WrapperE" demangled="ClippingLibrary::Wrapper" location="f0:12" file="f0" line="12" artificial="1" attributes="dllexport" size="32" align="32" members="_6 _7 _8 _9 _10 _11 _12 _13 _14 _15 _16 _17 _18 _19 _20 _21 _22 _23 " bases=""/>
+  <Field id="_6" name="_pImpl" type="_24" offset="0" context="_5" access="private" location="f0:35" file="f0" line="35"/>
+  <Struct id="_7" name="Implementation" context="_5" access="private" incomplete="1" mangled="N15ClippingLibrary7Wrapper14ImplementationE" demangled="ClippingLibrary::Wrapper::Implementation" location="f0:34" file="f0" line="34" artificial="1" align="8"/>
+  <OperatorMethod id="_8" name="=" returns="_25" artificial="1" throw="" context="_5" access="public" mangled="_ZN15ClippingLibrary7WrapperaSERKS0_" demangled="ClippingLibrary::Wrapper::operator=(ClippingLibrary::Wrapper const&amp;)" location="f0:12" file="f0" line="12" endline="12" inline="1">
+    <Argument type="_26" location="f0:12" file="f0" line="12"/>
+  </OperatorMethod>
+  <Constructor id="_9" name="Wrapper" artificial="1" throw="" context="_5" access="public" mangled="_ZN15ClippingLibrary7WrapperC1ERKS0_ *INTERNAL* " demangled="ClippingLibrary::Wrapper::Wrapper(ClippingLibrary::Wrapper const&amp;)" location="f0:12" file="f0" line="12" endline="12" inline="1">
+    <Argument type="_26" location="f0:12" file="f0" line="12"/>
+  </Constructor>
+  <Constructor id="_10" name="Wrapper" explicit="1" context="_5" access="public" mangled="_ZN15ClippingLibrary7WrapperC1Ev *INTERNAL* " demangled="ClippingLibrary::Wrapper::Wrapper()" location="f0:14" file="f0" line="14" extern="1"/>
+  <Destructor id="_11" name="Wrapper" context="_5" access="public" mangled="_ZN15ClippingLibrary7WrapperD1Ev *INTERNAL* " demangled="ClippingLibrary::Wrapper::~Wrapper()" location="f0:15" file="f0" line="15" extern="1">
+  </Destructor>
+  <Method id="_12" name="AddInnerRing" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper12AddInnerRingEv" demangled="ClippingLibrary::Wrapper::AddInnerRing()" location="f0:17" file="f0" line="17" extern="1"/>
+  <Method id="_13" name="AddOuterRing" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper12AddOuterRingEv" demangled="ClippingLibrary::Wrapper::AddOuterRing()" location="f0:18" file="f0" line="18" extern="1"/>
+  <Method id="_14" name="AddPoint" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper8AddPointEdd" demangled="ClippingLibrary::Wrapper::AddPoint(double, double)" location="f0:19" file="f0" line="19" extern="1">
+    <Argument name="x" type="_28" location="f0:19" file="f0" line="19"/>
+    <Argument name="y" type="_28" location="f0:19" file="f0" line="19"/>
+  </Method>
+  <Method id="_15" name="ExecuteDifference" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper17ExecuteDifferenceEv" demangled="ClippingLibrary::Wrapper::ExecuteDifference()" location="f0:21" file="f0" line="21" extern="1"/>
+  <Method id="_16" name="ExecuteIntersection" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper19ExecuteIntersectionEv" demangled="ClippingLibrary::Wrapper::ExecuteIntersection()" location="f0:22" file="f0" line="22" extern="1"/>
+  <Method id="_17" name="ExecuteUnion" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper12ExecuteUnionEv" demangled="ClippingLibrary::Wrapper::ExecuteUnion()" location="f0:23" file="f0" line="23" extern="1"/>
+  <Method id="_18" name="ExecuteXor" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper10ExecuteXorEv" demangled="ClippingLibrary::Wrapper::ExecuteXor()" location="f0:24" file="f0" line="24" extern="1"/>
+  <Method id="_19" name="GetInnerRing" returns="_29" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper12GetInnerRingEv" demangled="ClippingLibrary::Wrapper::GetInnerRing()" location="f0:26" file="f0" line="26" extern="1"/>
+  <Method id="_20" name="GetOuterRing" returns="_29" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper12GetOuterRingEv" demangled="ClippingLibrary::Wrapper::GetOuterRing()" location="f0:27" file="f0" line="27" extern="1"/>
+  <Method id="_21" name="GetPoint" returns="_29" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper8GetPointERdS1_" demangled="ClippingLibrary::Wrapper::GetPoint(double&amp;, double&amp;)" location="f0:28" file="f0" line="28" extern="1">
+    <Argument name="x" type="_30" location="f0:28" file="f0" line="28"/>
+    <Argument name="y" type="_30" location="f0:28" file="f0" line="28"/>
+  </Method>
+  <Method id="_22" name="InitializeClip" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper14InitializeClipEv" demangled="ClippingLibrary::Wrapper::InitializeClip()" location="f0:30" file="f0" line="30" extern="1"/>
+  <Method id="_23" name="InitializeSubject" returns="_27" context="_5" access="public" mangled="_ZN15ClippingLibrary7Wrapper17InitializeSubjectEv" demangled="ClippingLibrary::Wrapper::InitializeSubject()" location="f0:31" file="f0" line="31" extern="1"/>
+  <PointerType id="_24" type="_7" size="32" align="32"/>
+  <ReferenceType id="_25" type="_5" size="32" align="32"/>
+  <ReferenceType id="_26" type="_5c" size="32" align="32"/>
+  <FundamentalType id="_27" name="void" align="8"/>
+  <FundamentalType id="_28" name="double" size="64" align="64"/>
+  <FundamentalType id="_29" name="bool" size="8" align="8"/>
+  <ReferenceType id="_30" type="_28" size="32" align="32"/>
+  <CvQualifiedType id="_5c" type="_5" const="1"/>
+  <File id="f0" name="Wrapper.h"/>
+</GCC_XML>
