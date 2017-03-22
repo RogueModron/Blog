@@ -1,0 +1,42 @@
+Managed         N   ms 000134  r NA
+Managed         I   ms 000245  r 887459712
+Managed         D   ms 000412  r 4,99999995E+15
+Managed         IP  ms 000969  r 887459712
+Managed         DP  ms 001297  r 4,99999995E+15
+
+PInvoke         N   ms 010976  r NA
+PInvoke         I   ms 011450  r 887459712
+PInvoke         D   ms 014476  r 4,99999995E+15
+PInvoke         IP  ms 012001  r 887459712
+PInvoke         DP  ms 014328  r 4,99999995E+15
+
+PInvokeS        N   ms 001293  r NA
+PInvokeS        I   ms 001264  r 887459712
+PInvokeS        D   ms 006892  r 4,99999995E+15
+PInvokeS        IP  ms 003485  r 887459712
+PInvokeS        DP  ms 006658  r 4,99999995E+15
+
+Delegate        N   ms 063598  r NA
+Delegate        I   ms 067243  r 887459712
+Delegate        D   ms 071551  r 4,99999995E+15
+Delegate        IP  ms 068303  r 887459712
+Delegate        DP  ms 068789  r 4,99999995E+15
+
+DelegateS       N   ms 055179  r NA
+DelegateS       I   ms 058886  r 887459712
+DelegateS       D   ms 061486  r 4,99999995E+15
+DelegateS       IP  ms 059718  r 887459712
+DelegateS       DP  ms 060425  r 4,99999995E+15
+
+DynamicS        N   ms 003027  r NA
+DynamicS        I   ms 003908  r 887459712
+DynamicS        D   ms 006632  r 4,99999995E+15
+DynamicS        IP  ms 004419  r 887459712
+DynamicS        DP  ms 006627  r 4,99999995E+15
+
+Calli           N   ms 002871  r NA
+Calli           I   ms 003667  r 887459712
+Calli           D   ms 003485  r 4,99999995E+15
+Calli           IP  ms 004249  r 887459712
+Calli           DP  ms 003766  r 4,99999995E+15
+

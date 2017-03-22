@@ -1,0 +1,48 @@
+Managed         N   ms 000129  r NA
+Managed         I   ms 000299  r 887459712
+Managed         D   ms 000388  r 4,99999995E+15
+Managed         IP  ms 000963  r 887459712
+Managed         DP  ms 001328  r 4,99999995E+15
+
+CppCli          N   ms 004523  r NA
+CppCli          I   ms 004495  r 887459712
+CppCli          D   ms 004824  r 4,99999995E+15
+CppCli          IP  ms 004760  r 887459712
+CppCli          DP  ms 005576  r 4,99999995E+15
+
+PInvoke         N   ms 006804  r NA
+PInvoke         I   ms 007102  r 887459712
+PInvoke         D   ms 007962  r 4,99999995E+15
+PInvoke         IP  ms 008117  r 887459712
+PInvoke         DP  ms 008215  r 4,99999995E+15
+
+PInvokeS        N   ms 001322  r NA
+PInvokeS        I   ms 001173  r 887459712
+PInvokeS        D   ms 001324  r 4,99999995E+15
+PInvokeS        IP  ms 003681  r 887459712
+PInvokeS        DP  ms 004203  r 4,99999995E+15
+
+Delegate        N   ms 019391  r NA
+Delegate        I   ms 019384  r 887459712
+Delegate        D   ms 021266  r 4,99999995E+15
+Delegate        IP  ms 019309  r 887459712
+Delegate        DP  ms 022881  r 4,99999995E+15
+
+DelegateS       N   ms 006950  r NA
+DelegateS       I   ms 006924  r 887459712
+DelegateS       D   ms 007513  r 4,99999995E+15
+DelegateS       IP  ms 007361  r 887459712
+DelegateS       DP  ms 007478  r 4,99999995E+15
+
+DynamicS        N   ms 002954  r NA
+DynamicS        I   ms 003772  r 887459712
+DynamicS        D   ms 003731  r 4,99999995E+15
+DynamicS        IP  ms 004497  r 887459712
+DynamicS        DP  ms 004247  r 4,99999995E+15
+
+Calli           N   ms 002774  r NA
+Calli           I   ms 003550  r 887459712
+Calli           D   ms 003484  r 4,99999995E+15
+Calli           IP  ms 004136  r 887459712
+Calli           DP  ms 003925  r 4,99999995E+15
+

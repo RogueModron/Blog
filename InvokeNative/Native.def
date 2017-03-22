@@ -1,0 +1,8 @@
+LIBRARY	Native
+
+EXPORTS
+    DoWithNoParameters
+    DoWithInt
+    DoWithIntPointer
+    DoWithDouble
+    DoWithDoublePointer
