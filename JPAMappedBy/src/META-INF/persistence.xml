@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+		xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+		version="2.1">
+	
+	<persistence-unit
+			name="JPAMappedByHB"
+			transaction-type="RESOURCE_LOCAL">
+			
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		
+		<class>app.ms.Master</class>
+		<class>app.ms.Slave</class>
+		
+		<class>app.ms.noOrderColumn.unidirectional.Master</class>
+		<class>app.ms.noOrderColumn.unidirectional.Slave</class>
+		
+		<class>app.ms.noOrderColumn.bidirectional.Master</class>
+		<class>app.ms.noOrderColumn.bidirectional.Slave</class>
+		
+		<class>app.ms.noOrderColumn.bidirectional.mappedBy.Master</class>
+		<class>app.ms.noOrderColumn.bidirectional.mappedBy.Slave</class>
+		
+		<class>app.ms.orderColumn.unidirectional.Master</class>
+		<class>app.ms.orderColumn.unidirectional.Slave</class>
+		
+		<class>app.ms.orderColumn.bidirectional.Master</class>
+		<class>app.ms.orderColumn.bidirectional.Slave</class>
+		
+		<class>app.ms.orderColumn.bidirectional.mappedBy.Master</class>
+		<class>app.ms.orderColumn.bidirectional.mappedBy.Slave</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/JPAMappedBy" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.user" value="admin" />
+			<property name="javax.persistence.jdbc.password" value="admin" />
+			
+			<property name="hibernate.archive.autodetection" value="false" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.globally_quoted_identifiers" value="false" />
+			
+			<!-- 
+			<property name="hibernate.enhancer.enableLazyInitialization" value="true" />
+			<property name="hibernate.flushMode" value="FLUSH_MANUAL" />
+			<property name="hibernate.jdbc.batch_size" value="10" />
+			<property name="hibernate.jdbc.use_streams_for_binary" value="false" />
+			<property name="hibernate.jmx.enabled" value="false" />
+			<property name="hibernate.order_updates" value="true" />
+			-->
+			
+			<property name="hibernate.cache.use_second_level_cache" value="false" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.auto" value="none" />
+			<property name="hibernate.jdbc.log.warnings" value="true" />
+			<property name="hibernate.jpa.compliance.query" value="true" />
+			<property name="hibernate.query.jpaql_strict_compliance" value="true" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.use_sql_comments" value="false" />
+		</properties>
+		
+	</persistence-unit>
+	
+	<persistence-unit
+			name="JPAMappedByEL"
+			transaction-type="RESOURCE_LOCAL">
+			
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		<class>app.ms.Master</class>
+		<class>app.ms.Slave</class>
+		
+		<class>app.ms.noOrderColumn.unidirectional.Master</class>
+		<class>app.ms.noOrderColumn.unidirectional.Slave</class>
+		
+		<class>app.ms.noOrderColumn.bidirectional.Master</class>
+		<class>app.ms.noOrderColumn.bidirectional.Slave</class>
+		
+		<class>app.ms.noOrderColumn.bidirectional.mappedBy.Master</class>
+		<class>app.ms.noOrderColumn.bidirectional.mappedBy.Slave</class>
+		
+		<class>app.ms.orderColumn.unidirectional.Master</class>
+		<class>app.ms.orderColumn.unidirectional.Slave</class>
+		
+		<class>app.ms.orderColumn.bidirectional.Master</class>
+		<class>app.ms.orderColumn.bidirectional.Slave</class>
+		
+		<class>app.ms.orderColumn.bidirectional.mappedBy.Master</class>
+		<class>app.ms.orderColumn.bidirectional.mappedBy.Slave</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/JPAMappedBy" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.user" value="admin" />
+			<property name="javax.persistence.jdbc.password" value="admin" />
+			
+			<property name="eclipselink.cache.shared.default" value="false" />
+			<property name="eclipselink.logging.level.sql" value="FINE" />
+			<property name="eclipselink.logging.parameters" value="true" />
+		</properties>
+		
+	</persistence-unit>
+	
+	<persistence-unit
+			name="JPAMappedByOJ"
+			transaction-type="RESOURCE_LOCAL">
+			
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
+		
+		<class>app.ms.Master</class>
+		<class>app.ms.Slave</class>
+		
+		<class>app.ms.noOrderColumn.unidirectional.Master</class>
+		<class>app.ms.noOrderColumn.unidirectional.Slave</class>
+		
+		<class>app.ms.noOrderColumn.bidirectional.Master</class>
+		<class>app.ms.noOrderColumn.bidirectional.Slave</class>
+		
+		<class>app.ms.noOrderColumn.bidirectional.mappedBy.Master</class>
+		<class>app.ms.noOrderColumn.bidirectional.mappedBy.Slave</class>
+		
+		<class>app.ms.orderColumn.unidirectional.Master</class>
+		<class>app.ms.orderColumn.unidirectional.Slave</class>
+		
+		<class>app.ms.orderColumn.bidirectional.Master</class>
+		<class>app.ms.orderColumn.bidirectional.Slave</class>
+		
+		<class>app.ms.orderColumn.bidirectional.mappedBy.Master</class>
+		<class>app.ms.orderColumn.bidirectional.mappedBy.Slave</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/JPAMappedBy" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.user" value="admin" />
+			<property name="javax.persistence.jdbc.password" value="admin" />
+			
+			<property name="openjpa.ConnectionFactoryProperties" value="PrintParameters=true" />
+			<property name="openjpa.Log" value="DefaultLevel=INFO, Runtime=INFO, Tool=INFO, SQL=TRACE" />
+			<!-- 
+			<property name="openjpa.RuntimeUnenhancedClasses" value="supported"/>
+			 -->
+		</properties>
+		
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,52 @@
+-- Database: JPAMappedBy
+
+-- DROP DATABASE "JPAMappedBy";
+
+CREATE DATABASE "JPAMappedBy"
+    WITH 
+    OWNER = admin
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'C'
+    LC_CTYPE = 'C'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+    
+-- Table: public.master
+
+-- DROP TABLE public.master;
+
+CREATE TABLE public.master
+(
+    id serial NOT NULL,
+    description text COLLATE pg_catalog."default",
+    CONSTRAINT master_pkey PRIMARY KEY (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.master
+    OWNER to admin;
+
+-- Table: public.slave
+
+-- DROP TABLE public.slave;
+
+CREATE TABLE public.slave
+(
+    id serial NOT NULL,
+    description text COLLATE pg_catalog."default",
+    id_master integer /* NOT NULL */,
+    index integer,
+    CONSTRAINT slave_pkey PRIMARY KEY (id),
+    CONSTRAINT slave_master_fk FOREIGN KEY (id_master)
+        REFERENCES public.master (id)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.slave
+    OWNER to admin;
